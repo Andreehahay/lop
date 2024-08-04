@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Three.js Heart Shape with Particles and Text</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background-color: #000;
+    }
+    canvas {
+      display: block;
+    }
+    #text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: Arial, sans-serif;
+      font-size: 3rem; /* Adjust font size here */
+      text-align: center;
+      z-index: 1; /* Ensure text is above the canvas */
+      pointer-events: none; /* Allow mouse events to pass through text */
+      color: white;
+    }
+    .letter {
+      display: inline-block;
+      transition: color 0.5s ease-in-out;
+    }
+    .glow {
+      color: #ff69b4; /* Bright pink color for glowing effect */
+      text-shadow: 0 0 20px #ff69b4; /* Glowing effect */
+    }
+  </style>
+</head>
+<body>
+  <div id="text">
+    <span class="letter">D</span>
+    <span class="letter">H</span>
+    <span class="letter">E</span>
+    <span class="letter">A</span>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
